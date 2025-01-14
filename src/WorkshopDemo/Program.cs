@@ -7,7 +7,7 @@ using System.Reflection.Metadata;
 using WorkshopDemo.Core.Common;
 using WorkshopDemo.HealthChecks;
 ModuleReference bad code adfai 
-
+    more failed stuff
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.    
