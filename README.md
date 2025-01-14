@@ -1,4 +1,4 @@
-# GitHub Actions: From Zero to Hero Workshop
+# Patrick's Version: GitHub Actions: From Zero to Hero Workshop
 
 In this workshop we're going to cover GitHub Actions. For a tangentially related workshop of using GitHub Actions to deploy to Azure using Bicep, check out this repo: https://github.com/scottsauber/workshop-dotnet-azure-github-bicep.
 
