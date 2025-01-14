@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: PR Verify - CI???
+    name: CI (name)
     runs-on: ubuntu-22.04
 
     steps:
