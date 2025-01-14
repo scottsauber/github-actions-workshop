@@ -8,6 +8,6 @@ on:
 jobs:
   build:
     name: CI
-    uses: ./.github/workflows/reusable-build.yml
+    uses: scottsauber/reusable-workflows/.github/workflows/reusable-build.yml@main
     with:
       dotnet_version: 9.0.x
