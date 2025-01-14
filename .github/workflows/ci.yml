@@ -1,4 +1,4 @@
-name: PR Verify
+name: CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: PR Verify
+    name: CI
     runs-on: ubuntu-22.04
 
     steps:
