@@ -11,6 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkshopDemo.Core", "src\Wo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkshopDemo.Core.Tests", "src\WorkshopDemo.Core.Tests\WorkshopDemo.Core.Tests.csproj", "{E7CCBA3A-FC5D-4057-8BEE-1AE0C8721589}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{63F563FD-EBC8-49B0-82ED-E9CDB3E633CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{251DF294-CDE7-44B6-90EC-BC95C4AB4A1E}"
+	ProjectSection(SolutionItems) = preProject
+		pr-verify.yml = pr-verify.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +44,7 @@ Global
 		{726BFFB1-25C3-409E-8590-FBCF44614E5B} = {31650C0E-0E36-4739-958D-C5B5FAAB5439}
 		{318E6A3D-71DD-4C0B-BCFA-E078383EC545} = {31650C0E-0E36-4739-958D-C5B5FAAB5439}
 		{E7CCBA3A-FC5D-4057-8BEE-1AE0C8721589} = {31650C0E-0E36-4739-958D-C5B5FAAB5439}
+		{251DF294-CDE7-44B6-90EC-BC95C4AB4A1E} = {63F563FD-EBC8-49B0-82ED-E9CDB3E633CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E42894CA-5F4C-4DB7-AE8F-D4272CC25722}
