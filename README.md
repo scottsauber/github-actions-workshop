@@ -174,7 +174,7 @@ No hands-on work, just going over slides
 1. Create a `secrets-test.yml` file with the following YAML
 
    ```yml
-   name: Run every 5 minutes
+   name: Echo
    on:
      pull_request:
        branches: ["main"]
