@@ -61,7 +61,7 @@ No hands-on work, just going over slides
 1. Make a change that makes the code not compile. ie open the src/WorkshopDemo/Program.cs file and add a letter to the first line
 1. Commit and push and watch it fail
 1. Undo that change and let's make a test fail.
-1. Open /src/WorkshopDemo.Core.Tests/Common/FileServiceTests.cs and change the assertion on line 19 to something like `result.Should().Be("Hello world");`
+1. Open /src/WorkshopDemo.Core.Tests/Common/FileServiceTests.cs and change the assertion on line 19 to something like `result.ShouldBe("Hello world");`
 1. Commit and push and watch it fail
 1. Undo that change and commit and push
 1. Do not merge it in yet
