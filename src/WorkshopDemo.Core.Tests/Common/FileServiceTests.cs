@@ -1,4 +1,4 @@
-﻿using FluentAssertions;
+﻿using Shouldly;
 using WorkshopDemo.Core.Common;
 
 namespace WorkshopDemo.Core.Tests.Common;
@@ -16,7 +16,7 @@ public class FileServiceTests
 
         var result = _fileService.GetFileContents(fileName);
 
-        result.Should().Be(fileContents);
+        result.ShouldBe(fileContents);
     }
 
     [Fact]
@@ -24,6 +24,6 @@ public class FileServiceTests
     {
         var result = () => _fileService.GetFileContents("Nope.txt");
 
-        result.Should().Throw<FileNotFoundException>();
+        result.ShouldThrow<FileNotFoundException>();
     }
 }

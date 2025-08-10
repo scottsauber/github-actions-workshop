@@ -1,4 +1,4 @@
-﻿using FluentAssertions;
+﻿using Shouldly;
 using NSubstitute;
 using WorkshopDemo.Core.Common;
 
@@ -17,8 +17,8 @@ public class VersionServiceTests
         var version1 = new VersionService(fileService).GetVersion();
         var version2 = new VersionService(fileService).GetVersion();
 
-        version1.Should().Be(fileContents);
-        version2.Should().Be(fileContents);
+        version1.ShouldBe(fileContents);
+        version2.ShouldBe(fileContents);
         fileService.Received(1).GetFileContents(versionFilePath);
     }
 }
