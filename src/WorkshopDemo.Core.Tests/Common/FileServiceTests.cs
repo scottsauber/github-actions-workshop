@@ -16,7 +16,7 @@ public class FileServiceTests
 
         var result = _fileService.GetFileContents(fileName);
 
-        result.ShouldBe(fileContents);
+        result.ShouldBe("Hello World");
     }
 
     [Fact]

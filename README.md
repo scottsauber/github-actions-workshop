@@ -24,7 +24,7 @@ No hands-on work, just going over slides
 1. Create a `.github` folder in the root
 1. Under the `.github` folder, create a `workflows` folder
 1. Under the `workflows` folder, create a `pr-verify.yml` file
-1. Paste the following into that file
+1. Paste the following into that file:
 
    ```yml
    name: PR Verify
