@@ -1,25 +1,26 @@
-  name: CI
+name: CI
 
-  on: # trigger - either when pushing to "main" branch or manually
-    push:
-      branches: ["main"]
-    workflow_dispatch:
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
 
-  jobs:
-    build:
-      name: CI
-      runs-on: ubuntu-22.04
+jobs:
+  build:
+    name: CI
+    runs-on: ubuntu-22.04
 
-      steps:
-        - uses: actions/checkout@v4 # checkout the repository
+    steps:
+      - uses: actions/checkout@v4
 
-        - name: Set up .NET Core # install dotnet 9
-          uses: actions/setup-dotnet@v4 
-          with:
-            dotnet-version: 9.0.x
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
 
-        - name: Build with dotnet # build the app
-          run: dotnet build --configuration Release
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
 
-        - name: Test # run with tests
-          run: dotnet test --configuration Release --no-build
+      - name: Test
+        run: dotnet test --configuration Release --no-build
+
