@@ -6,6 +6,7 @@ using Serilog.Sinks.SystemConsole.Themes;
 using WorkshopDemo.Core.Common;
 using WorkshopDemo.HealthChecks;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.    
