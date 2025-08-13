@@ -1,7 +1,5 @@
    name: CI
 
-   env:
-     DOTNET_VERSION: 9.0.x # variable for .NET version
    on:
      push:
        branches: ["main"]
@@ -12,4 +10,4 @@
        name: CI
        uses:  DDSoftDennie/reusable-workflows/.github/workflows/reusable-build.yml@main
        with:
-         dotnet_version: $DOTNET_VERSION
+         dotnet_version: 9.0.x
