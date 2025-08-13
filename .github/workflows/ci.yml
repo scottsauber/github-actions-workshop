@@ -8,18 +8,6 @@ on:
 jobs:
   build:
     name: CI
-    runs-on: ubuntu-22.04
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 9.0.x
-
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
-
-      - name: Test
-        run: dotnet test --configuration Release --no-build
+    uses: scottsauber/reusable-workflows/.github/workflows/reusable-build.yml@main
+    with:
+      dotnet_version: 9.0.x
