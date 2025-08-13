@@ -1,5 +1,5 @@
 using Azure.Identity;
-using Microsoft.ApplicationInsights.Extensibility;
+ausing Microsoft.ApplicationInsights.Extensibility;
 using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
