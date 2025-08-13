@@ -8,6 +8,6 @@
    jobs:
      build:
        name: CI
-       uses:  DDSoftDennie/reusable-workflows/.github/workflows/reusable-build.yml@main
+       uses: DDSoftDennie/reusable-workflows/.github/workflows/reusable-build.yml@main
        with:
          dotnet_version: 9.0.x
