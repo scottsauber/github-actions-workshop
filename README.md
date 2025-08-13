@@ -20,11 +20,11 @@ No hands-on work, just going over slides
 ## Module 3 - Hands On: Creating a PR Verify Workflow
 
 1. Fork this repository if you haven't already.
-1. Create a new branch
-1. Create a `.github` folder in the root
-1. Under the `.github` folder, create a `workflows` folder
-1. Under the `workflows` folder, create a `pr-verify.yml` file
-1. Paste the following into that file:
+2. Create a new branch
+3. Create a `.github` folder in the root
+4. Under the `.github` folder, create a `workflows` folder
+5. Under the `workflows` folder, create a `pr-verify.yml` file
+6. Paste the following into that file:
 
    ```yml
    name: PR Verify
@@ -54,17 +54,17 @@ No hands-on work, just going over slides
            run: dotnet test --configuration Release --no-build
    ```
 
-1. Commit, Push, and Open a PR
-1. Do you think the GitHub Action will trigger when it's not committed on the `main` branch?
-1. Scroll down to the bottom of the PR and notice you have a new status check called "PR Verify" and click on it
-1. Watch the build succeed
-1. Make a change that makes the code not compile. ie open the src/WorkshopDemo/Program.cs file and add a letter to the first line
-1. Commit and push and watch it fail
-1. Undo that change and let's make a test fail.
-1. Open /src/WorkshopDemo.Core.Tests/Common/FileServiceTests.cs and change the assertion on line 19 to something like `result.ShouldBe("Hello world");`
-1. Commit and push and watch it fail
-1. Undo that change and commit and push
-1. Do not merge it in yet
+7. Commit, Push, and Open a PR
+8. Do you think the GitHub Action will trigger when it's not committed on the `main` branch?
+9. Scroll down to the bottom of the PR and notice you have a new status check called "PR Verify" and click on it
+10. Watch the build succeed
+11. Make a change that makes the code not compile. ie open the src/WorkshopDemo/Program.cs file and add a letter to the first line
+12. Commit and push and watch it fail
+13. Undo that change and let's make a test fail.
+14. Open /src/WorkshopDemo.Core.Tests/Common/FileServiceTests.cs and change the assertion on line 19 to something like `result.ShouldBe("Hello world");`
+15. Commit and push and watch it fail
+16. Undo that change and commit and push
+17. Do not merge it in yet
 
 ## Module 4 - Slides: Optimal GitHub settings
 
