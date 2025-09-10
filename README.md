@@ -1,6 +1,6 @@
 # GitHub Actions: From Zero to Hero Workshop
 
-# Added new changes
+# Added new changes to prtest
 In this workshop we're going to cover GitHub Actions. For a tangentially related workshop of using GitHub Actions to deploy to Azure using Bicep, check out this repo: https://github.com/scottsauber/workshop-dotnet-azure-github-bicep
 
 ## Pre-requisites:
