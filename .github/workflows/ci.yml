@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: CI
+    uses: scottsauber/reusable-workflows/.github/workflows/reusable-build.yml@main
+    with:
+      dotnet_version: 9.0.x
